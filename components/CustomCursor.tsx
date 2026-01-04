@@ -55,7 +55,7 @@ const CustomCursor: React.FC = () => {
     <>
       {/* Main Cursor Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-2 h-2 bg-lime-400 rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="hidden md:block fixed top-0 left-0 w-2 h-2 bg-lime-400 rounded-full pointer-events-none z-[9999] mix-blend-difference"
         style={{
           x: cursorX,
           y: cursorY,
@@ -65,7 +65,7 @@ const CustomCursor: React.FC = () => {
       />
       {/* Outer Animated Ring */}
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 border border-lime-400 rounded-full pointer-events-none z-[9998]"
+        className="hidden md:block fixed top-0 left-0 w-8 h-8 border border-lime-400 rounded-full pointer-events-none z-[9998]"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
